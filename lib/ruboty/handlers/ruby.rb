@@ -11,7 +11,7 @@ module Ruboty
 
       def evaluate(message)
         message.reply(eval(message[:code]))
-      rescue => exception
+      rescue Exception => exception
         body = "#{exception.class}: #{exception}"
         message.reply(body)
         Ruboty.logger.debug([body, exception.backtrace].join("\n"))
