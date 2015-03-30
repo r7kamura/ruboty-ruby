@@ -3,5 +3,6 @@
 
 ## Usage
 ```
-@ruboty ruby 1 + 1
+> @ruboty ruby 1 + 1
+2
 ```
