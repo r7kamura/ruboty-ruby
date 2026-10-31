@@ -9,6 +9,11 @@ Gem::Specification.new do |spec|
   spec.email         = ["r7kamura@gmail.com"]
   spec.summary       = "Ruboty plug-in to instantly evaluate Ruby code in given message."
   spec.homepage      = "https://github.com/r7kamura/ruboty-ruby"
+
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata["changelog_uri"] = "#{spec.homepage}/releases"
+  spec.metadata["rubygems_mfa_required"] = "true"
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.require_paths = ["lib"]
 
